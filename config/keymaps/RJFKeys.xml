@@ -61,9 +61,6 @@
     <keyboard-shortcut first-keystroke="ctrl f6" />
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="s" />
   </action>
-  <action id="ChangeSplitOrientation">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="semicolon" />
-  </action>
   <action id="ChangeTypeSignature">
     <keyboard-shortcut first-keystroke="shift ctrl f6" />
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="t" />
@@ -72,9 +69,15 @@
     <keyboard-shortcut first-keystroke="ctrl alt space" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift space" />
   </action>
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift back_space" />
+  </action>
+  <action id="CloseAllEditorsButActive">
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="back_space" />
+  </action>
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl f4" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt m" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt back_space" />
   </action>
   <action id="CodeCompletion">
     <keyboard-shortcut first-keystroke="ctrl space" />
@@ -499,14 +502,14 @@
   </action>
   <action id="HideActiveWindow">
     <keyboard-shortcut first-keystroke="shift escape" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="w" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt back_space" />
   </action>
   <action id="HideAllWindows">
     <keyboard-shortcut first-keystroke="shift ctrl f12" />
     <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt w" />
   </action>
   <action id="HideSideWindows">
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift w" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="back_space" />
   </action>
   <action id="HighlightUsagesInFile">
     <keyboard-shortcut first-keystroke="shift ctrl f7" />
@@ -517,6 +520,9 @@
   </action>
   <action id="HippieCompletion">
     <keyboard-shortcut first-keystroke="alt space" />
+  </action>
+  <action id="Images.Thumbnails.Hide">
+    <keyboard-shortcut first-keystroke="ctrl f4" />
   </action>
   <action id="ImplementMethods">
     <keyboard-shortcut first-keystroke="ctrl i" />
@@ -558,16 +564,8 @@
     <keyboard-shortcut first-keystroke="shift ctrl back_space" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="j" />
   </action>
-  <action id="JumpToLastWindow">
-    <keyboard-shortcut first-keystroke="f12" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="back_space" />
-  </action>
   <action id="JumpToNextChange">
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="l" />
-  </action>
-  <action id="MaximizeToolWindow">
-    <keyboard-shortcut first-keystroke="shift ctrl quote" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt back_space" />
   </action>
   <action id="MethodDown">
     <keyboard-shortcut first-keystroke="alt down" />
@@ -587,7 +585,7 @@
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="period" />
   </action>
   <action id="MoveEditorToOppositeTabGroup">
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt semicolon" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="semicolon" />
   </action>
   <action id="MoveLineDown">
     <keyboard-shortcut first-keystroke="shift alt down" />
@@ -607,11 +605,9 @@
   </action>
   <action id="MoveTabDown">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="slash" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt slash" />
   </action>
   <action id="MoveTabRight">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="quote" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt quote" />
   </action>
   <action id="NewModuleInGroup">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift m" />
@@ -628,17 +624,17 @@
     <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt period" />
   </action>
   <action id="NextSplitter">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt o" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt l" />
   </action>
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="alt right" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt l" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt o" />
   </action>
   <action id="OpenEditorInOppositeTabGroup">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt semicolon" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt semicolon" />
   </action>
   <action id="OpenFile">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt y" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt n" />
   </action>
   <action id="OptimizeImports">
     <keyboard-shortcut first-keystroke="ctrl alt o" />
@@ -658,7 +654,7 @@
     <keyboard-shortcut first-keystroke="shift alt m" />
   </action>
   <action id="PrevSplitter">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt u" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt j" />
   </action>
   <action id="PreviousOccurence">
     <keyboard-shortcut first-keystroke="ctrl alt up" />
@@ -670,7 +666,7 @@
   </action>
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="alt left" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt j" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt u" />
   </action>
   <action id="QuickImplementations">
     <keyboard-shortcut first-keystroke="shift ctrl i" />
@@ -683,7 +679,6 @@
   </action>
   <action id="RecentChangedFiles">
     <keyboard-shortcut first-keystroke="shift ctrl e" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift h" />
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="h" />
   </action>
   <action id="RecentFiles">
@@ -720,10 +715,10 @@
   </action>
   <action id="SaveAll">
     <keyboard-shortcut first-keystroke="ctrl s" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="n" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="m" />
   </action>
   <action id="SaveDocument">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt n" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt m" />
   </action>
   <action id="SelectAllOccurrences">
     <keyboard-shortcut first-keystroke="shift ctrl alt j" />
@@ -743,7 +738,7 @@
   </action>
   <action id="ShowContent">
     <keyboard-shortcut first-keystroke="alt down" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="t" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt y" />
   </action>
   <action id="ShowFilePath">
     <keyboard-shortcut first-keystroke="ctrl alt f12" />
@@ -805,7 +800,7 @@
   </action>
   <action id="Synchronize">
     <keyboard-shortcut first-keystroke="ctrl alt y" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt p" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="r" />
   </action>
   <action id="ToggleBookmark">
     <keyboard-shortcut first-keystroke="f11" />
@@ -825,10 +820,10 @@
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="slash" />
   </action>
   <action id="Unsplit">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="back_space" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt semicolon" />
   </action>
   <action id="UnsplitAll">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt back_space" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="semicolon" />
   </action>
   <action id="Unwrap">
     <keyboard-shortcut first-keystroke="shift ctrl delete" />
