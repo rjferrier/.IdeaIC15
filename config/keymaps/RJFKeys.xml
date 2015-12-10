@@ -18,18 +18,27 @@
     <keyboard-shortcut first-keystroke="shift insert" />
     <keyboard-shortcut first-keystroke="alt m" />
   </action>
+  <action id="ActivateChangesToolWindow">
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="9" />
+    <keyboard-shortcut first-keystroke="alt x" second-keystroke="alt 9" />
+  </action>
   <action id="ActivateDebugToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="5" />
   </action>
   <action id="ActivateFavoritesToolWindow">
     <keyboard-shortcut first-keystroke="alt 2" />
-    <keyboard-shortcut first-keystroke="alt x" second-keystroke="2" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="2" />
+  </action>
+  <action id="ActivateFindToolWindow">
+    <keyboard-shortcut first-keystroke="alt 3" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="3" />
   </action>
   <action id="ActivateHierarchyToolWindow" />
+  <action id="ActivateMessagesToolWindow" />
   <action id="ActivateProjectToolWindow">
     <keyboard-shortcut first-keystroke="alt 1" />
-    <keyboard-shortcut first-keystroke="alt x" second-keystroke="1" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="1" />
   </action>
   <action id="ActivateRunToolWindow">
     <keyboard-shortcut first-keystroke="alt 4" />
@@ -37,6 +46,10 @@
   </action>
   <action id="ActivateStructureToolWindow">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="alt 7" />
+  </action>
+  <action id="ActivateTODOToolWindow">
+    <keyboard-shortcut first-keystroke="alt 6" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="6" />
   </action>
   <action id="Android.TraceViewSearch">
     <keyboard-shortcut first-keystroke="ctrl f" />
@@ -189,6 +202,7 @@
   </action>
   <action id="EditorCutLineEnd">
     <keyboard-shortcut first-keystroke="alt d" second-keystroke="alt period" />
+    <keyboard-shortcut first-keystroke="shift alt period" />
   </action>
   <action id="EditorDecreaseFontSize">
     <keyboard-shortcut first-keystroke="alt minus" />
@@ -394,17 +408,19 @@
   </action>
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
-    <keyboard-shortcut first-keystroke="alt d" second-keystroke="7" />
+    <keyboard-shortcut first-keystroke="shift alt 7" />
   </action>
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="f3" />
     <keyboard-shortcut first-keystroke="ctrl l" />
     <keyboard-shortcut first-keystroke="alt 8" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt o" />
   </action>
   <action id="FindPrevious">
     <keyboard-shortcut first-keystroke="shift f3" />
     <keyboard-shortcut first-keystroke="shift ctrl l" />
     <keyboard-shortcut first-keystroke="shift alt 8" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt u" />
   </action>
   <action id="FindUsages">
     <keyboard-shortcut first-keystroke="alt f7" />
@@ -412,11 +428,11 @@
   </action>
   <action id="FindUsagesInFile">
     <keyboard-shortcut first-keystroke="ctrl f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift 7" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt 7" />
   </action>
   <action id="FindWordAtCaret">
     <keyboard-shortcut first-keystroke="ctrl f3" />
-    <keyboard-shortcut first-keystroke="alt d" second-keystroke="alt 7" />
+    <keyboard-shortcut first-keystroke="alt d" second-keystroke="alt 8" />
   </action>
   <action id="FixDocComment">
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift semicolon" />
@@ -441,7 +457,7 @@
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="ctrl b" />
     <mouse-shortcut keystroke="control button1" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt h" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="h" />
   </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="shift ctrl n" />
@@ -488,7 +504,7 @@
   </action>
   <action id="GotoTypeDeclaration">
     <mouse-shortcut keystroke="shift control button1" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="h" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift h" />
   </action>
   <action id="GuiDesigner.DeleteGroup">
     <keyboard-shortcut first-keystroke="delete" />
@@ -560,12 +576,21 @@
     <keyboard-shortcut first-keystroke="shift ctrl back_space" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="j" />
   </action>
+  <action id="JumpToLastWindow">
+    <keyboard-shortcut first-keystroke="f12" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="h" />
+  </action>
   <action id="JumpToNextChange">
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="l" />
+  </action>
+  <action id="MaximizeToolWindow">
+    <keyboard-shortcut first-keystroke="shift ctrl quote" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt h" />
   </action>
   <action id="MethodDown">
     <keyboard-shortcut first-keystroke="alt down" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt k" />
+    <keyboard-shortcut first-keystroke="alt 0" />
   </action>
   <action id="MethodHierarchy">
     <keyboard-shortcut first-keystroke="shift ctrl h" />
@@ -574,6 +599,7 @@
   <action id="MethodUp">
     <keyboard-shortcut first-keystroke="alt up" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt i" />
+    <keyboard-shortcut first-keystroke="alt 9" />
   </action>
   <action id="Move">
     <keyboard-shortcut first-keystroke="f6" />
@@ -593,10 +619,12 @@
   <action id="MoveStatementDown">
     <keyboard-shortcut first-keystroke="shift ctrl down" />
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="alt k" />
+    <keyboard-shortcut first-keystroke="shift alt 0" />
   </action>
   <action id="MoveStatementUp">
     <keyboard-shortcut first-keystroke="shift ctrl up" />
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="alt i" />
+    <keyboard-shortcut first-keystroke="shift alt 9" />
   </action>
   <action id="MoveTabDown">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="slash" />
@@ -694,7 +722,7 @@
   </action>
   <action id="Replace">
     <keyboard-shortcut first-keystroke="ctrl r" />
-    <keyboard-shortcut first-keystroke="shift alt 7" />
+    <keyboard-shortcut first-keystroke="alt d" second-keystroke="7" />
   </action>
   <action id="ReplaceInPath">
     <keyboard-shortcut first-keystroke="shift ctrl r" />
@@ -749,7 +777,7 @@
   </action>
   <action id="ShowSettingsAndFindUsages">
     <keyboard-shortcut first-keystroke="shift ctrl alt f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="f7" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift 7" />
   </action>
   <action id="ShowUsages">
     <keyboard-shortcut first-keystroke="ctrl alt f7" />
