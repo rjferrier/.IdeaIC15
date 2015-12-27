@@ -54,6 +54,9 @@
   <action id="AddNewTabToTheEndMode">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt number_sign" />
   </action>
+  <action id="AddToFavorites">
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="f" />
+  </action>
   <action id="Android.TraceViewSearch">
     <keyboard-shortcut first-keystroke="ctrl f" />
     <keyboard-shortcut first-keystroke="alt f3" />
@@ -80,6 +83,10 @@
     <keyboard-shortcut first-keystroke="shift ctrl f6" />
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="t" />
   </action>
+  <action id="ChooseDebugConfiguration">
+    <keyboard-shortcut first-keystroke="shift alt f9" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="space" />
+  </action>
   <action id="ChooseRunConfiguration">
     <keyboard-shortcut first-keystroke="shift alt f10" />
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="space" />
@@ -88,11 +95,11 @@
     <keyboard-shortcut first-keystroke="ctrl alt space" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift space" />
   </action>
-  <action id="CloseAllEditors">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift back_space" />
-  </action>
   <action id="CloseAllEditorsButActive">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="back_space" />
+  </action>
+  <action id="CloseAllUnpinnedEditors">
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift back_space" />
   </action>
   <action id="CloseContent">
     <keyboard-shortcut first-keystroke="ctrl f4" />
@@ -148,6 +155,10 @@
   <action id="Coverage">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift space" />
   </action>
+  <action id="Debug">
+    <keyboard-shortcut first-keystroke="shift f9" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt space" />
+  </action>
   <action id="DelegateMethods">
     <keyboard-shortcut first-keystroke="alt a" second-keystroke="d" />
   </action>
@@ -175,6 +186,18 @@
     <keyboard-shortcut first-keystroke="shift back_space" />
     <keyboard-shortcut first-keystroke="alt h" />
   </action>
+  <action id="EditorChooseLookupItem">
+    <keyboard-shortcut first-keystroke="enter" />
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
+  <action id="EditorChooseLookupItemCompleteStatement">
+    <keyboard-shortcut first-keystroke="shift ctrl enter" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="n" />
+  </action>
+  <action id="EditorChooseLookupItemDot">
+    <keyboard-shortcut first-keystroke="ctrl period" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="period" />
+  </action>
   <action id="EditorCloneCaretAbove">
     <keyboard-shortcut first-keystroke="alt open_bracket" />
   </action>
@@ -201,7 +224,7 @@
   </action>
   <action id="EditorCompleteStatement">
     <keyboard-shortcut first-keystroke="shift ctrl enter" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt n" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="n" />
   </action>
   <action id="EditorContextInfo">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="q" />
@@ -424,13 +447,11 @@
     <keyboard-shortcut first-keystroke="f3" />
     <keyboard-shortcut first-keystroke="ctrl l" />
     <keyboard-shortcut first-keystroke="alt 8" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt o" />
   </action>
   <action id="FindPrevious">
     <keyboard-shortcut first-keystroke="shift f3" />
     <keyboard-shortcut first-keystroke="shift ctrl l" />
     <keyboard-shortcut first-keystroke="shift alt 8" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt u" />
   </action>
   <action id="FindUsages">
     <keyboard-shortcut first-keystroke="alt f7" />
@@ -438,7 +459,7 @@
   </action>
   <action id="FindUsagesInFile">
     <keyboard-shortcut first-keystroke="ctrl f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt 7" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt 8" />
   </action>
   <action id="FindWordAtCaret">
     <keyboard-shortcut first-keystroke="ctrl f3" />
@@ -467,7 +488,7 @@
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="ctrl b" />
     <mouse-shortcut keystroke="control button1" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="h" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt h" />
   </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="shift ctrl n" />
@@ -476,7 +497,7 @@
   <action id="GotoImplementation">
     <keyboard-shortcut first-keystroke="ctrl alt b" />
     <mouse-shortcut keystroke="control alt button1" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="n" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt n" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl g" />
@@ -502,7 +523,7 @@
   </action>
   <action id="GotoSuperMethod">
     <keyboard-shortcut first-keystroke="ctrl u" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="y" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt y" />
   </action>
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="shift ctrl alt n" />
@@ -514,7 +535,7 @@
   </action>
   <action id="GotoTypeDeclaration">
     <mouse-shortcut keystroke="shift control button1" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift h" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift alt h" />
   </action>
   <action id="GuiDesigner.DeleteGroup">
     <keyboard-shortcut first-keystroke="delete" />
@@ -535,7 +556,7 @@
   </action>
   <action id="HighlightUsagesInFile">
     <keyboard-shortcut first-keystroke="shift ctrl f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt 8" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift alt 8" />
   </action>
   <action id="HippieBackwardCompletion">
     <keyboard-shortcut first-keystroke="shift alt space" />
@@ -686,6 +707,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl insert" />
     <keyboard-shortcut first-keystroke="shift alt m" />
   </action>
+  <action id="PinActiveTab">
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt p" />
+  </action>
   <action id="PrevSplitter">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt j" />
   </action>
@@ -775,7 +799,7 @@
   </action>
   <action id="SelectAllOccurrences">
     <keyboard-shortcut first-keystroke="shift ctrl alt j" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift alt slash" />
+    <keyboard-shortcut first-keystroke="alt d" second-keystroke="shift alt slash" />
   </action>
   <action id="SelectIn">
     <keyboard-shortcut first-keystroke="alt f1" />
@@ -783,15 +807,11 @@
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="alt j" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt slash" />
+    <keyboard-shortcut first-keystroke="alt d" second-keystroke="alt slash" />
   </action>
   <action id="ShowBookmarks">
     <keyboard-shortcut first-keystroke="shift f11" />
     <keyboard-shortcut first-keystroke="alt d" second-keystroke="p" />
-  </action>
-  <action id="ShowContent">
-    <keyboard-shortcut first-keystroke="alt down" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt y" />
   </action>
   <action id="ShowFilePath">
     <keyboard-shortcut first-keystroke="ctrl alt f12" />
@@ -801,18 +821,20 @@
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="alt equals" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift e" />
   </action>
+  <action id="ShowRecentFindUsagesGroup">
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift 7" />
+  </action>
   <action id="ShowSettings">
     <keyboard-shortcut first-keystroke="ctrl alt s" />
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="s" />
   </action>
   <action id="ShowSettingsAndFindUsages">
     <keyboard-shortcut first-keystroke="shift ctrl alt f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift 7" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="f7" />
   </action>
   <action id="ShowUsages">
     <keyboard-shortcut first-keystroke="ctrl alt f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="9" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="8" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt 7" />
   </action>
   <action id="SmartTypeCompletion">
     <keyboard-shortcut first-keystroke="shift ctrl space" />
@@ -854,6 +876,9 @@
     <keyboard-shortcut first-keystroke="ctrl alt y" />
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="r" />
   </action>
+  <action id="TabList">
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt y" />
+  </action>
   <action id="TabsAlphabeticalMode">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="number_sign" />
   </action>
@@ -871,7 +896,7 @@
   </action>
   <action id="UnselectPreviousOccurrence">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="shift alt j" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="slash" />
+    <keyboard-shortcut first-keystroke="alt d" second-keystroke="slash" />
   </action>
   <action id="Unsplit">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="semicolon" />
