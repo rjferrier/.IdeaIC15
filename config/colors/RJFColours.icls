@@ -86,6 +86,7 @@
     <option name="DEFAULT_KEYWORD">
       <value>
         <option name="FOREGROUND" value="e08b31" />
+        <option name="BACKGROUND" value="171717" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>

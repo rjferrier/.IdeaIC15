@@ -93,7 +93,7 @@
   </action>
   <action id="ClassNameCompletion">
     <keyboard-shortcut first-keystroke="ctrl alt space" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift space" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift alt space" />
   </action>
   <action id="CloseAllEditorsButActive">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="back_space" />
@@ -107,7 +107,7 @@
   </action>
   <action id="CodeCompletion">
     <keyboard-shortcut first-keystroke="ctrl space" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt space" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="space" />
   </action>
   <action id="CodeInspection.OnEditor">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="shift alt i" />
@@ -224,7 +224,7 @@
   </action>
   <action id="EditorCompleteStatement">
     <keyboard-shortcut first-keystroke="shift ctrl enter" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="n" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt space" />
   </action>
   <action id="EditorContextInfo">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="q" />
@@ -263,6 +263,7 @@
   <action id="EditorEscape">
     <keyboard-shortcut first-keystroke="escape" />
     <keyboard-shortcut first-keystroke="alt q" />
+    <keyboard-shortcut first-keystroke="alt back_slash" />
   </action>
   <action id="EditorIncreaseFontSize">
     <keyboard-shortcut first-keystroke="alt equals" />
@@ -556,7 +557,7 @@
   </action>
   <action id="HighlightUsagesInFile">
     <keyboard-shortcut first-keystroke="shift ctrl f7" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift alt 8" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="8" />
   </action>
   <action id="HippieBackwardCompletion">
     <keyboard-shortcut first-keystroke="shift alt space" />
@@ -838,7 +839,7 @@
   </action>
   <action id="SmartTypeCompletion">
     <keyboard-shortcut first-keystroke="shift ctrl space" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="space" />
+    <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift space" />
   </action>
   <action id="SplitHorizontally">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="slash" />
