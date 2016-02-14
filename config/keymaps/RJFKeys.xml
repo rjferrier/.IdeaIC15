@@ -170,7 +170,7 @@
   </action>
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt e" />
   </action>
   <action id="Editor Copy">
     <keyboard-shortcut first-keystroke="alt comma" />
@@ -743,7 +743,7 @@
   </action>
   <action id="Refactorings.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt t" />
-    <keyboard-shortcut first-keystroke="alt a" second-keystroke="enter" />
+    <keyboard-shortcut first-keystroke="alt a" second-keystroke="space" />
   </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="ctrl alt l" />
@@ -930,7 +930,7 @@
   </action>
   <action id="ViewSource">
     <keyboard-shortcut first-keystroke="ctrl enter" />
-    <keyboard-shortcut first-keystroke="alt s" second-keystroke="enter" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="enter" />
   </action>
   <action id="context.clear">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="shift alt x" />
