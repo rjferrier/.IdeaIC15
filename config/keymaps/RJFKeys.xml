@@ -53,6 +53,10 @@
     <keyboard-shortcut first-keystroke="alt 6" />
     <keyboard-shortcut first-keystroke="alt w" second-keystroke="6" />
   </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="alt f12" />
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
   <action id="AddNewTabToTheEndMode">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt number_sign" />
   </action>
@@ -78,9 +82,17 @@
     <keyboard-shortcut first-keystroke="ctrl alt h" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="m" />
   </action>
+  <action id="ChangeSignature">
+    <keyboard-shortcut first-keystroke="ctrl f6" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="s" />
+  </action>
+  <action id="ChangeTypeSignature">
+    <keyboard-shortcut first-keystroke="shift ctrl f6" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="t" />
+  </action>
   <action id="ChooseDebugConfiguration">
     <keyboard-shortcut first-keystroke="shift alt f9" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift space" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="space" />
   </action>
   <action id="ChooseRunConfiguration">
     <keyboard-shortcut first-keystroke="shift alt f10" />
@@ -91,7 +103,7 @@
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="shift alt space" />
   </action>
   <action id="CloseAllEditorsButActive">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift m" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="m" />
   </action>
   <action id="CloseAllUnpinnedEditors">
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift alt m" />
@@ -143,12 +155,19 @@
   <action id="CopyAsPlainText">
     <keyboard-shortcut first-keystroke="alt d" second-keystroke="comma" />
   </action>
+  <action id="CopyElement">
+    <keyboard-shortcut first-keystroke="f5" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="comma" />
+  </action>
   <action id="Coverage">
-    <keyboard-shortcut first-keystroke="shift alt e" second-keystroke="alt space" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift space" />
   </action>
   <action id="Debug">
     <keyboard-shortcut first-keystroke="shift f9" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift alt space" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt space" />
+  </action>
+  <action id="DelegateMethods">
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="d" />
   </action>
   <action id="DomElementsTreeView.DeleteElement">
     <keyboard-shortcut first-keystroke="delete" />
@@ -366,8 +385,8 @@
     <keyboard-shortcut first-keystroke="alt d" second-keystroke="alt semicolon" />
   </action>
   <action id="EditorToggleStickySelection">
-    <keyboard-shortcut first-keystroke="alt semicolon" />
     <keyboard-shortcut first-keystroke="alt a" />
+    <keyboard-shortcut first-keystroke="alt semicolon" />
   </action>
   <action id="EditorUnSelectWord">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
@@ -402,6 +421,14 @@
   <action id="ExpressionTypeInfo">
     <keyboard-shortcut first-keystroke="shift ctrl p" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="e" />
+  </action>
+  <action id="ExtractFunctionToScope">
+    <keyboard-shortcut first-keystroke="shift ctrl alt m" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift alt m" />
+  </action>
+  <action id="ExtractMethod">
+    <keyboard-shortcut first-keystroke="ctrl alt m" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="m" />
   </action>
   <action id="FileStructurePopup">
     <keyboard-shortcut first-keystroke="ctrl f12" />
@@ -452,7 +479,7 @@
   </action>
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt insert" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="g" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt w" />
   </action>
   <action id="GotoClass">
     <keyboard-shortcut first-keystroke="ctrl n" />
@@ -547,12 +574,45 @@
   <action id="Images.Thumbnails.Hide">
     <keyboard-shortcut first-keystroke="ctrl f4" />
   </action>
+  <action id="ImplementMethods">
+    <keyboard-shortcut first-keystroke="ctrl i" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="i" />
+  </action>
+  <action id="Inline">
+    <keyboard-shortcut first-keystroke="ctrl alt n" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="n" />
+  </action>
   <action id="InsertLiveTemplate">
     <keyboard-shortcut first-keystroke="ctrl j" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt space" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="l" />
+  </action>
+  <action id="IntroduceConstant">
+    <keyboard-shortcut first-keystroke="ctrl alt c" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="c" />
+  </action>
+  <action id="IntroduceField">
+    <keyboard-shortcut first-keystroke="ctrl alt f" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="f" />
+  </action>
+  <action id="IntroduceFunctionalParameter">
+    <keyboard-shortcut first-keystroke="shift ctrl alt p" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift alt p" />
+  </action>
+  <action id="IntroduceLambdaParameter">
+    <keyboard-shortcut first-keystroke="shift ctrl p" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift p" />
+  </action>
+  <action id="IntroduceParameter">
+    <keyboard-shortcut first-keystroke="ctrl alt p" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="p" />
   </action>
   <action id="IntroduceProperty">
     <keyboard-shortcut first-keystroke="ctrl alt f" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift f" />
+  </action>
+  <action id="IntroduceVariable">
+    <keyboard-shortcut first-keystroke="ctrl alt v" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="v" />
   </action>
   <action id="JumpToLastChange">
     <keyboard-shortcut first-keystroke="shift ctrl back_space" />
@@ -585,6 +645,10 @@
     <keyboard-shortcut first-keystroke="alt up" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt i" />
     <keyboard-shortcut first-keystroke="alt 7" />
+  </action>
+  <action id="Move">
+    <keyboard-shortcut first-keystroke="f6" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="period" />
   </action>
   <action id="MoveEditorToOppositeTabGroup">
     <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt semicolon" />
@@ -644,6 +708,10 @@
     <keyboard-shortcut first-keystroke="ctrl alt o" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="i" />
   </action>
+  <action id="OverrideMethods">
+    <keyboard-shortcut first-keystroke="ctrl o" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="o" />
+  </action>
   <action id="ParameterInfo">
     <keyboard-shortcut first-keystroke="ctrl p" />
     <keyboard-shortcut first-keystroke="alt s" second-keystroke="alt p" />
@@ -690,7 +758,7 @@
   </action>
   <action id="Refactorings.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt t" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="space" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt e" />
   </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="ctrl alt l" />
@@ -710,6 +778,10 @@
   <action id="ReplaceInPath">
     <keyboard-shortcut first-keystroke="shift ctrl r" />
     <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift 9" />
+  </action>
+  <action id="Rerun">
+    <keyboard-shortcut first-keystroke="ctrl f5" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt space" />
   </action>
   <action id="ResizeToolWindowDown">
     <keyboard-shortcut first-keystroke="shift ctrl down" />
@@ -733,7 +805,7 @@
   </action>
   <action id="Run">
     <keyboard-shortcut first-keystroke="shift f10" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="alt space" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="shift alt space" />
   </action>
   <action id="SaveAll">
     <keyboard-shortcut first-keystroke="ctrl s" />
@@ -757,6 +829,10 @@
   <action id="ShowBookmarks">
     <keyboard-shortcut first-keystroke="shift f11" />
     <keyboard-shortcut first-keystroke="alt d" second-keystroke="p" />
+  </action>
+  <action id="ShowErrorDescription">
+    <keyboard-shortcut first-keystroke="ctrl f1" />
+    <keyboard-shortcut first-keystroke="alt q" />
   </action>
   <action id="ShowFilePath">
     <keyboard-shortcut first-keystroke="ctrl alt f12" />
@@ -793,18 +869,14 @@
   </action>
   <action id="Stop">
     <keyboard-shortcut first-keystroke="ctrl f2" />
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="f9" />
+    <keyboard-shortcut first-keystroke="alt e" second-keystroke="q" />
   </action>
   <action id="StoreDefaultLayout">
     <keyboard-shortcut first-keystroke="alt w" second-keystroke="0" />
   </action>
   <action id="SurroundWith">
     <keyboard-shortcut first-keystroke="ctrl alt t" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="alt w" />
-  </action>
-  <action id="SurroundWithLiveTemplate">
-    <keyboard-shortcut first-keystroke="ctrl alt j" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift alt w" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="w" />
   </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="shift alt enter" />
@@ -855,7 +927,7 @@
   </action>
   <action id="Unwrap">
     <keyboard-shortcut first-keystroke="shift ctrl delete" />
-    <keyboard-shortcut first-keystroke="alt w" second-keystroke="w" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="shift w" />
   </action>
   <action id="UsageView.Exclude">
     <keyboard-shortcut first-keystroke="delete" />
@@ -894,9 +966,6 @@
   <action id="context.save">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="shift alt s" />
   </action>
-  <action id="editRunConfigurations">
-    <keyboard-shortcut first-keystroke="alt e" second-keystroke="f10" />
-  </action>
   <action id="hg4idea.QFold">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="shift alt d" />
   </action>
@@ -908,6 +977,7 @@
   </action>
   <action id="refactoring.introduce.property">
     <keyboard-shortcut first-keystroke="ctrl alt v" />
+    <keyboard-shortcut first-keystroke="alt w" second-keystroke="v" />
   </action>
   <action id="tasks.close">
     <keyboard-shortcut first-keystroke="alt x" second-keystroke="shift alt w" />
